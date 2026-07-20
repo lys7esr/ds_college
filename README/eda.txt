@@ -1,0 +1,8 @@
+univariet, bivareit, multi-variet : types of EDA
+take one variable and analyze the data, then two then multiple variables
+
+categorical data: normal, ordinal
+numerical data: 
+
+numpy making space utilization the max, numerical calculations
+instead of int64, can use int32 and other to reduce the space taken by the integer values
