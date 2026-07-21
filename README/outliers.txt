@@ -1,0 +1,13 @@
+10,12,13,15,18,20,22,24,100
+// Quartiles
+Q1= 25% = 13
+Q2= 50%, median = 18
+Q3= 75% = 22
+
+IQR=Q3-Q1=9
+Lower Bound= Q1-(IQR*1.5)
+        =13-(9*1.5) = -0.5
+Upper Bount= Q3+(IRQ*1.5)
+        =22+(9*1.5) = 35.5
+
+anything out of range of lower bound and upper bound is outlier, here 100 is a outlier
