@@ -1,0 +1,111 @@
+part of ai, 10k-20k
+technique to teach machine to understand nd recongnize pattern, its a concept, used to implement ai
+ai>ml>dl
+ml:supervised (classification nd regression (logistic nd linear)), unsupervised (clustering)
+semi-supervised: half labelled and half unlabelled, try to label the unlabelled data 
+
+artificial intelligence: mimic human intelligence, its a field, not possible without ml
+perform tasks that human perform like calculations
+
+computer vision: 
+dl: using neural network, model neuron (simple and complex), activation functions
+implementation of ml, lakh records
+
+used in spam detection, recommendation, medical diagnosis, autonomous vehicles (computer vision, lydar (light detection and ranging)), etc,.
+
+ML:
+SUPERVISED AND UNSUPERVISED LEARNING: 
+supervised: labelled data, dont want ambuigity, want to predict, higher accuracy, easier, details insight
+dog and cupcake? (triangle), each input has correspoding single output, learns to map i/p to o/p
+mathematical model, predict price of plot??, in between is either blackbox or mathematical function, gives input get output
+Types: classification (spam or not spam) (yes or no), regression (predicting values) (linear or logistic regression)
+linear regression: trying to plot linear curve (bottom-up approach)
+logistic regression: (yes or no)
+
+unsupervised: unlabelled data, not aware of dataset, you explore i.e. clustering (trying to form groups), does classification
+less accurate, cat and dog, discover hidden pattern and intrinsic data that is not known
+Customer classification (high n/w or low network) (frequent, daily buyer) 
+Types: clustering (KNN is popular technique) (make different grps), dimensionality rediction (to find PCA, group of two or more highly contirbuting columns)
+(reducing dimension) (trying to model based activity)
+(process only what is required) (timestamp)
+
+###dataset has to be robust (very clearly understood), the one it is trained on
+
+
+BIAS-VARIANCE TRADEOFF- imp concept in ml
+
+high bias: underfitting, too simple model for complexity of data, biased o/p of one i/p value
+underfitting i.e. not learn all values equally, can;t capture underlying patterns
+not performing well on trained data as well as new data, poor training and test data
+add more features i.e. complexity increases, columns to make it robust
+
+Variance: high variance: overfitting, too sensitive
+how much is data varying, how it varies with fluctuation, extra pollating i.e. exacterating, too complex
+gives high value, good on training poor on test
+reduce unwanted columns, to make it simpler
+
+Tradeoff: bias^2+variance
+to find balance where both are low
+performing well on both 
+
+TRAIN-TEST SPLIT & CROSS-VALIDATION: framework
+70% train on dataset, 30% is for test i.e. classification
+splitting data in train and test set 
+
+sklearn, scikit learn: it has dataset
+housing dataset, 
+seed statement, seed value: random_state=42
+
+K-FOLD CROSS VALIDATION
+verify the ml model, epoch yk?? to cross-verify cross-validation model
+shuffle the folds then, 1 fold as train set then k-1 as test set each iteration
+model average is average of all those epochs, like 5 epoch k value
+accuracy score, standard variation of each fold
+logic regression: if price is going to increase or not
+linear regression: predict price
+
+Rule of thumb of k 
+
+LINEAR REGRESSION: california housing edition, straight line graph, gives prediction
+trying to find relationship between variables
+one dependent and independent variable 
+graph, plotting a slope, need y intercept, y=mx+c 
+mean squared error
+one straight general equation thst satisfies all small equation 
+
+RMSE & R^2
+root mean squared error: to find error in model, coefficient of determination:(R^2) to evaluate the model
+less rmse, better model 
+y-test and y-predict 
+R^2: 1 (robust),0 (performing well but not robust, but not able to explain),-1 (horrible, rerun)  HOW robust model is, (perfect fit, bad fit, or smt yk), variance?
+rating of model, understand the different variance
+collect-clean-process-visualize-evaluate
+
+REGRESSION VS CLASSIFICATION 
+regression: predicting continuous values, relation between multiple varaibles
+classification: predicting categories, single class classification, multi-class classification, classify the daata
+close to clustering but classification is on labelled dataset
+
+LOGISTIC REGRESSION:
+sigmoid function? return yes or no, range is 0 to 1
+classification algorithm, will classify, sigmoid on linear model 
+
+K-NEAREST NEIGHBOURS (KNN)
+k in no. of clusters, regression model, PCA (combination of 2 best clusters or smt), calculate euclidian distane, unsupervised
+prefer to keep less no. of clusters
+if more variables, then keep more clusters i.e. more categories 
+k too small: sensitive to noice
+k too large: model prediction becomes too smooth
+k= root of n, where n is? cross-validation
+no training phase, laxzy learner, directly plot, no pre-processing, strengths
+first plot then categorize ya predict
+plot based on nearest neighbour
+slow at prediction time for large dataset, sensitive to scale or features? weakness
+NORMALIZE THE DATA, before doing KNN unsupervised wala, if differing value divide by constant to bring it to the range
+i.e. reduce dimension, reduce values for plotting
+
+DECISION TRESS:
+leaf node is the result, unsupervised popularly used for
+
+RANDOM FOREST:
+confusion matrix: true positive false positive or smt like that, false negative
