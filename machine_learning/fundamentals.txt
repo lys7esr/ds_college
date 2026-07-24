@@ -1,3 +1,5 @@
+Refer this ppt: https://gamma.app/docs/Day-8-Day-9-ipehoguiqp88wco?mode=present#card-lf346404dtgub4d
+
 part of ai, 10k-20k
 technique to teach machine to understand nd recongnize pattern, its a concept, used to implement ai
 ai>ml>dl
