@@ -1,0 +1,3 @@
+linear regression: one feature, y=mx+c 
+y is predicted value, m is the slope x is the feature
+multiple regression: multiple features
