@@ -1,3 +1,6 @@
 linear regression: one feature, y=mx+c 
 y is predicted value, m is the slope x is the feature
-multiple regression: multiple features
+multiple regression: multiple features'
+
+There is supervised, unsupervised, semi-supervised and other type where we reward the model if it predicts correctyl else we 
+yk cut some point or smt like that
