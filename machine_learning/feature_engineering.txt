@@ -1,0 +1,38 @@
+3 types
+
+Feature encoding: assign numberical values to english labels in dataset
+label encoding, male female assigning numbers, see if india-0, korea-1, italy-2 is italy>korea>india, FALSE so next encoding
+one-hot encoding? it assigns india-001, korea-010, italy-100 so no greater or smaller ka problem only number assigned
+why not ascii value? it will be a huge number
+
+Feature scaling:
+Standard scaler: bigger the value, more storage, scales down the value to smalled range, so points are in closer proximity
+as closer the points, better the best fit line, so better model
+formula: ((value-mean)/Standard deviation)
+MinMax sccaler: values are 0-1, deep learning, neural networks
+formula: ((x-min)/(max-min))
+
+Feature Selection:
+Only selecting features that hold some value for our model to train
+no unnecessary features included
+
+Feature creation: 
+Created a feature to train the model (not present in the dataset) as it is useful and contributes to the training
+
+Handling missing values:
+mean, median, mode
+
+fit(): fit data into the model, learns and then fit
+transform(): apply, mean median mode
+fit_transform(): learn and apply those mean median mode into the model
+
+HYPER PARAMETER TUNING
+tuning is changing the hyper parameter to get best accuracy
+parameters are label learned by model itself, no need to give to model
+degree in polynomial regression and k in knn, are hyper parameter, defined by us
+
+Techniques:
+Grid search cross-validation (CV), model tells k value itself and come back with best k value
+automatically checks for k value and return back with best k value
+CV, divide into parts then each is used in training and testing, every part is eventually used in both, manually changing the k value
+Randomized search CV, randomly select hyper parameter value and returns the best value automatically
