@@ -1,0 +1,9 @@
+Unsupervised learning
+Features known but target not known
+
+K Means Clustering
+Steps:
+1. finding K, no. of clusters
+2. k centroids
+3. distance calculation clustering
+4. repeat 2-3 until centroids doesnt change
